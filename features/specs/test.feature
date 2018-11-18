@@ -5,11 +5,11 @@ Feature: XML
     
  	  Given a WSDL rquest
 	  When I send parameters with the post method and with XML text
-      | logradouro     		| <logradouro>   		|
-      | localidade  			| <localidade>		 	|
-      | UF								| <UF>							|
+      | cep     		| <cep>   		|
+      | user  			| <user>		 	|
+      | password		| <password>	|
 	  Then the <status_code> needs to return 200
 
     Examples:
-    |logradouro   |localidade     |UF		   |status_code |
-    |	    	  		|		          	|			   |200   	    |
+    |cep     |user     |password	   |status_code |
+    |04966000|<user>   |<passrword>  |200   	    |

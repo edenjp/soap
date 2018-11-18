@@ -7,5 +7,6 @@ When("I send parameters with the post method and with XML text") do |table|
 end
 
 Then("the {int} needs to return 200") do |status_code|
-	expect(@action.response.body).to include ("VOCE PRECISA ESTAR AUTENTICADO.")
+	puts "\n\nPRINTING RESPONSE BODY\n\n"
+  puts @action.body
 end
