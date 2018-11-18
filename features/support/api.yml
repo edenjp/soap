@@ -1,0 +1,2 @@
+qa:
+  url: 'http://www.byjg.com.br/site/webservice.php/ws/cep?WSDL'
