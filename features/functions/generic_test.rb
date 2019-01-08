@@ -2,13 +2,13 @@ def action(table)
   @parameters       = table.rows_hash  
   
   puts "\n\nPRINTING GIVEN BODY\n\n"
-  puts cep_xml_payload
+  puts zip_code_xml_payload
 
   endpoint          = $api['url']
 
   @action = HTTParty.post(
     endpoint,:headers => {"Content-Type" => 'text/xml', "SOAPAction" => 'urn:CEPServiceAction'}, 
-    :body => cep_xml_payload
+    :body => zip_code_xml_payload
     )
 
   puts @action.code
@@ -16,7 +16,7 @@ def action(table)
   puts endpoint
 end
 
-def cep_xml_payload
+def zip_code_xml_payload
   '<x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:www="urn:http://www.byjg.com.br">
       <x:Header/>
       <x:Body>

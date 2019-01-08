@@ -13,3 +13,5 @@ Feature: XML
     Examples:
     |cep     |user     |password	   |status_code |
     |04966000|<user>   |<passrword>  |200   	    |
+
+    #insert your on data into the fields user and password at the table
