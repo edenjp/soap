@@ -9,5 +9,6 @@ gem 'rspec'
 gem 'rspec-expectations'
 gem 'colorize'
 gem 'html'
+gem 'nokogiri', '~> 1.10', '>= 1.10.1'
 gem 'json'
 

@@ -467,31 +467,19 @@ function makeRed(element_id) {
 function makeYellow(element_id) {
   $('#'+element_id).css('background', '#FAF834');
   $('#'+element_id).css('color', '#000000');
-}</script></head><body><!-- Step count 0--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><h2><span class="val">Feature: XML</span></h2><p class="narrative">XML TEST<br/></p><div class='scenario outline'><span class="scenario_file">features/specs/test.feature:4</span><h3 id="scenario_1"><span class="keyword">Scenario Outline:</span> <span class="val">WSDL POST LIKE USING REST</span></h3><ol><li id='' class='step skipped'><div class="step_name"><span class="keyword">Given </span><span class="step val">a WSDL rquest</span></div><div class="step_file"><span>features/specs/test.feature:6</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step skipped'><div class="step_name"><span class="keyword">When </span><span class="step val">I send parameters with the post method and with XML text</span></div><div class="step_file"><span>features/specs/test.feature:7</span></div><table><tr class='step' id='row_8'><td id="row_8_0" class="step skipped"><div><span class="step param">cep</span></div></td><td id="row_8_1" class="step skipped"><div><span class="step param">&lt;cep&gt;</span></div></td></tr> <script type="text/javascript">moveProgressBar('100.0');</script><tr class='step' id='row_9'><td id="row_9_0" class="step skipped"><div><span class="step param">user</span></div></td><td id="row_9_1" class="step skipped"><div><span class="step param">&lt;user&gt;</span></div></td></tr> <script type="text/javascript">moveProgressBar('100.0');</script><tr class='step' id='row_10'><td id="row_10_0" class="step skipped"><div><span class="step param">password</span></div></td><td id="row_10_1" class="step skipped"><div><span class="step param">&lt;password&gt;</span></div></td></tr> <script type="text/javascript">moveProgressBar('100.0');</script></table></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step skipped'><div class="step_name"><span class="keyword">Then </span><span class="step val">the &lt;status_code&gt; needs to return 200</span></div><div class="step_file"><span>features/specs/test.feature:11</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol><div class="examples"><h4><span class="keyword">Examples</span> <span class="val"></span></h4><table><tr class='step' id='features_specs_test_feature_14'><th id="features_specs_test_feature_14_0" class="step skipped_param"><div><span class="step param">cep</span></div></th><th id="features_specs_test_feature_14_1" class="step skipped_param"><div><span class="step param">user</span></div></th><th id="features_specs_test_feature_14_2" class="step skipped_param"><div><span class="step param">password</span></div></th><th id="features_specs_test_feature_14_3" class="step skipped_param"><div><span class="step param">status_code</span></div></th></tr> <script type="text/javascript">moveProgressBar('100.0');</script><tr class='step' id='features_specs_test_feature_15'><td id="features_specs_test_feature_15_0" class="step passed"><div><span class="step param">04966000</span></div></td><td id="features_specs_test_feature_15_1" class="step passed"><div><span class="step param">&lt;user&gt;</span></div></td><td id="features_specs_test_feature_15_2" class="step passed"><div><span class="step param">&lt;passrword&gt;</span></div></td><td id="features_specs_test_feature_15_3" class="step passed"><div><span class="step param">200</span></div></td><td class="message">
-
-PRINTING OPERACTION
-
-, 
-
-PRINTING GIVEN BODY
-
-, <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:www="urn:http://www.byjg.com.br">
-      <x:Header/>
-      <x:Body>
-          <www:obterLogradouroAuth>
-            <www:cep>04966000</www:cep>
-            <www:usuario><user></www:usuario>
-            <www:senha><passrword></www:senha>
-          </www:obterLogradouroAuth>
-      </x:Body>
-  </x:Envelope>, 500, 
+}</script></head><body><!-- Step count 0--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><h2><span class="val">Feature: JSON</span></h2><p class="narrative">JSON TEST<br/></p><div class='scenario'><span class="tag">@get</span><span class="scenario_file">features/specs/json.feature:5</span><h3 id="scenario_1"><span class="keyword">Scenario:</span> <span class="val">Simple Get</span></h3><ol><li id='' class='step passed'><div class="step_name"><span class="keyword">Given </span><span class="step val">that I want to recover a post</span></div><div class="step_file"><span>features/step_definitions/json.rb:1</span></div></li><li class="step message">
+STARTING OPERATION TO RECOVER POST WITH ID 2
+</li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">When </span><span class="step val">I call a get method with a existent id</span></div><div class="step_file"><span>features/step_definitions/json.rb:5</span></div></li><li class="step message">
 
 PRINTING ENDPOINT
+</li><li class="step message">https://jsonplaceholder.typicode.com/posts/2</li><li class="step message">
 
-, http://www.byjg.com.br/site/webservice.php/ws/cep, 
-
-PRINTING RESPONSE BODY
-
-, <?xml version="1.0" encoding="UTF-8"?>
-<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Body><env:Fault><env:Code><env:Value>env:Sender</env:Value></env:Code><env:Reason><env:Text>Bad Request</env:Text></env:Reason></env:Fault></env:Body></env:Envelope>
-</td></tr> <script type="text/javascript">moveProgressBar('100.0');</script></table></div></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0m0.744s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "1 scenario (1 passed)<br />3 steps (3 passed)";</script></div></body></html>
+PRINTING SEARCH RESPONSE
+</li><li class="step message">{
+  "userId": 1,
+  "id": 2,
+  "title": "qui est esse",
+  "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+}</li><li class="step message">200</li><li class="step message">OK</li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Then </span><span class="step val">the response status will be 200 with a corresponding body</span></div><div class="step_file"><span>features/step_definitions/json.rb:9</span></div></li><li class="step message">
+PRINTING POST TITLE
+</li><li class="step message">qui est esse</li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0m0.712s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "1 scenario (1 passed)<br />3 steps (3 passed)";</script></div></body></html>
