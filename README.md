@@ -61,7 +61,7 @@ All the others settings can be found at `features/support`.
 
 To avoid all most future problems with bundle, please run:
  ```               
-$ sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev                                           
+$ sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev  
 ```  
 
 Install all of the required gems from your specified sources.  
